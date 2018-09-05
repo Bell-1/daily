@@ -1,0 +1,31 @@
+.header {
+    padding: 0 0.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    background: #00A2ED;
+    color: white;
+    .menu-icon {
+        margin-right: 0.3rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.4rem;
+        border-radius: 50%;
+        transition: 0.2s; 
+        &:active {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    }
+    .title {
+        font-size: 0.34rem;
+        font-weight: 700;
+    }
+}

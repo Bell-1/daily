@@ -1,0 +1,26 @@
+.list {
+    padding: 0 0.15rem;
+    .list-item {
+        margin-bottom: 0.16rem;
+        width: 100%;
+        height: 1.8rem;
+        padding: 0.2rem 0.3rem;
+        background: white;
+        border-radius: 0.1rem;
+        box-shadow: 0 0.02rem 0.08rem #C2C2C2;
+        display: flex;
+        justify-content: space-between;
+        .left {
+            height: 100%;
+            flex: 1;
+            text-align: left;
+        }
+        .right {
+            width: 2rem;
+            img {
+                height: 1.3rem;
+                width: 1.5rem;
+            }
+        }
+    }
+}

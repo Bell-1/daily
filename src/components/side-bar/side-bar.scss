@@ -1,0 +1,119 @@
+.side-bar {
+    .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 5rem;
+        height: 100vh;
+        background: white;
+        z-index: 100;
+        .top {
+            padding: 0.2rem 0.3rem;
+            width: 100%;
+            height: 2rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            background: #00A2ED;
+            color: white;
+            .user {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                .img {
+                    margin-right: 0.24rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 0.3rem;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #E7E7E7;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .operate {
+                padding: 0.15rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .block {
+                    width: 1.7rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 0.28rem;
+                    font-weight: 700;
+                    i {}
+                }
+            }
+        }
+        .page-title {
+            height: 0.92rem;
+            padding: 0 0.4rem;
+            color: #00A2ED;
+            background: #F0F0F0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            i {
+                margin-right: 0.4rem;
+            }
+        }
+        .wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 2.92rem;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+        }
+        .themes {
+            padding: 0 0.3rem;
+            .theme {
+                padding: 0.34rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                i {
+                    margin-right: 0.6rem;
+                    color: #CCCCCC;
+                }
+            }
+        }
+    }
+    .mask {
+        position: fixed;
+        z-index: 90;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .fold-enter,
+    .fold-leave-active
+    {
+        transform: translateX(-5rem);
+        transition: all 0.5s;
+    }
+    .fold-enter-to,
+    .fold-leave {
+        transform: translateX(0);
+        transition: all 0.5s;
+    }
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter,
+    .fade-leave-to/* .fade-leave-active below version 2.1.8 */
+    {
+        opacity: 0;
+    }
+}

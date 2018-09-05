@@ -1,0 +1,21 @@
+.NewsDetail {
+    .bg-image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
+        .title {
+            position: absolute;
+            color: white;
+            bottom: 0.2rem;
+            padding: 0 0.15rem;
+            text-align: left;
+        }
+    }
+}

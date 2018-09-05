@@ -1,0 +1,22 @@
+.Home {
+    height: 100vh;
+    .swiper {
+        width: 100%;
+        height: 4.4rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .slide-item {
+            position: relative;
+        }
+        .title {
+            position: absolute;
+            padding: 0 0.2rem;
+            top: 3.2rem;
+            color: white;
+            font-size: 0.30rem;
+            text-align: left;
+        }
+    }
+}
