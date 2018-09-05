@@ -67,32 +67,32 @@ http://www.fontawesome.com.cn/
 ### vue-cli 3.0 跨域
 项目根目录下创建 'vue-config.js' 文件 
 ``` javascript
-    //vue-config.js
-    module.exports = {
-        devServer: {
-    		// 设置主机地址
-    		host: 'localhost',
-    		// 设置默认端口
-    		port: 8080,
-    		proxy: {
-    			'/api': {
-    				// 目标 API 地址
-    				target: 'https://********.com/',
-    				// 如果要代理 websockets
-    				// ws: true,
-    				// 将主机标头的原点更改为目标URL
-    				changeOrigin: true,
-    				pathRewrite: {
-    					'^/api': '' //重写接口
-    				}
-    			}
-    		}
-    	}
+//vue-config.js
+module.exports = {
+    devServer: {
+		// 设置主机地址
+		host: 'localhost',
+		// 设置默认端口
+		port: 8080,
+		proxy: {
+			'/api': {
+				// 目标 API 地址
+				target: 'https://********.com/',
+				// 如果要代理 websockets
+				// ws: true,
+				// 将主机标头的原点更改为目标URL
+				changeOrigin: true,
+				pathRewrite: {
+					'^/api': '' //重写接口
+				}
+			}
+		}
 	}
+}
 ```
 中文说明  https://www.kancloud.cn/yunye/axios/234845
 ## 问题解决
-###图片403 解决方案
+### 图片403 解决方案
 使用图片跳转代理
 >文档网址：https://images.weserv.nl 。是一个图像缓存和调整大小代理
 ```javascript
