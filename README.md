@@ -42,7 +42,7 @@ Vue.use(VueBetterScroll);
 使用
 ``` javascript
 import vueAwesomeSwiper from "vue-awesome-swiper"
-import 'swiper/dist/css/swiper.css // 需要引入额外的样式
+import 'swiper/dist/css/swiper.css' // 需要引入额外的样式
 Vue.use(vueAwesomeSwiper);
 ```
 文档地址  
