@@ -69,25 +69,25 @@ http://www.fontawesome.com.cn/
 ``` javascript
 //vue-config.js
 module.exports = {
-    devServer: {
-		// 设置主机地址
-		host: 'localhost',
-		// 设置默认端口
-		port: 8080,
-		proxy: {
-			'/api': {
-				// 目标 API 地址
-				target: 'https://********.com/',
-				// 如果要代理 websockets
-				// ws: true,
-				// 将主机标头的原点更改为目标URL
-				changeOrigin: true,
-				pathRewrite: {
-					'^/api': '' //重写接口
-				}
-			}
-		}
-	}
+  devServer: {
+    // 设置主机地址
+    host: 'localhost',
+    // 设置默认端口
+    port: 8080,
+    proxy: {
+      '/api': {
+        // 目标 API 地址
+        target: 'https://********.com/',
+        // 如果要代理 websockets
+        // ws: true,
+        // 将主机标头的原点更改为目标URL
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '' //重写接口
+        }
+      }
+    }
+  }
 }
 ```
 中文说明  https://www.kancloud.cn/yunye/axios/234845
